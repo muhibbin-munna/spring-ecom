@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: router
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+
+
+server:
+  port: 9090
+
+eureka:
+  instance:
+    hostname: localhost
