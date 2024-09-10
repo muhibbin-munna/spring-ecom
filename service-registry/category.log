@@ -1,0 +1,170 @@
+#logback.classic pattern: %d %-5level [%thread] %logger{0}: %msg%n
+#logback.classic pattern: %d %-5level [%thread] %logger{0}: %msg%n
+2024-09-10 13:09:02,660 INFO  [main] ConfigServerConfigDataLoader: Fetching config from server at : http://localhost:8088
+2024-09-10 13:09:02,661 WARN  [main] ConfigServerConfigDataLoader: Could not locate PropertySource ([ConfigServerConfigDataResource@70abf9b0 uris = array<String>['http://localhost:8088'], optional = true, profiles = 'default']): None of labels [] found
+2024-09-10 13:09:02,662 INFO  [main] ConfigServerConfigDataLoader: Fetching config from server at : http://localhost:8088
+2024-09-10 13:09:02,662 WARN  [main] ConfigServerConfigDataLoader: Could not locate PropertySource ([ConfigServerConfigDataResource@41c204a0 uris = array<String>['http://localhost:8088'], optional = true, profiles = 'default']): None of labels [] found
+2024-09-10 13:09:02,663 INFO  [main] ConfigServerConfigDataLoader: Fetching config from server at : http://localhost:8088
+2024-09-10 13:09:02,664 WARN  [main] ConfigServerConfigDataLoader: Could not locate PropertySource ([ConfigServerConfigDataResource@64138b0c uris = array<String>['http://localhost:8088'], optional = true, profiles = 'default']): None of labels [] found
+2024-09-10 13:09:02,689 ERROR [main] SpringApplication: Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.FileAppender[consoleAppender] - "File" property not set for appender named [consoleAppender].
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.muhib.category_service.CategoryServiceApplication.main(CategoryServiceApplication.java:15)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.FileAppender[consoleAppender] - "File" property not set for appender named [consoleAppender].
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reportConfigurationErrorsIfNecessary(LogbackLoggingSystem.java:284)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:262)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:341)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:74)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:61)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:193)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
+	... 19 common frames omitted
+#logback.classic pattern: %d %-5level [%thread] %logger{0}: %msg%n
+#logback.classic pattern: %d %-5level [%thread] %logger{0}: %msg%n
+2024-09-10 13:10:18,237 INFO  [main] ConfigServerConfigDataLoader: Fetching config from server at : http://localhost:8088
+2024-09-10 13:10:18,239 WARN  [main] ConfigServerConfigDataLoader: Could not locate PropertySource ([ConfigServerConfigDataResource@736f3e9e uris = array<String>['http://localhost:8088'], optional = true, profiles = 'default']): None of labels [] found
+2024-09-10 13:10:18,239 INFO  [main] ConfigServerConfigDataLoader: Fetching config from server at : http://localhost:8088
+2024-09-10 13:10:18,239 WARN  [main] ConfigServerConfigDataLoader: Could not locate PropertySource ([ConfigServerConfigDataResource@23e44287 uris = array<String>['http://localhost:8088'], optional = true, profiles = 'default']): None of labels [] found
+2024-09-10 13:10:18,239 INFO  [main] ConfigServerConfigDataLoader: Fetching config from server at : http://localhost:8088
+2024-09-10 13:10:18,239 WARN  [main] ConfigServerConfigDataLoader: Could not locate PropertySource ([ConfigServerConfigDataResource@2b8d084 uris = array<String>['http://localhost:8088'], optional = true, profiles = 'default']): None of labels [] found
+2024-09-10 13:10:18,258 ERROR [main] SpringApplication: Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.FileAppender[consoleAppender] - "File" property not set for appender named [consoleAppender].
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.muhib.category_service.CategoryServiceApplication.main(CategoryServiceApplication.java:10)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.FileAppender[consoleAppender] - "File" property not set for appender named [consoleAppender].
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reportConfigurationErrorsIfNecessary(LogbackLoggingSystem.java:284)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:262)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:341)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:74)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:61)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:193)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
+	... 19 common frames omitted
+#logback.classic pattern: %d %-5level [%thread] %logger{0}: %msg%n
+#logback.classic pattern: %d %-5level [%thread] %logger{0}: %msg%n
+2024-09-10 13:11:58,055 INFO  [main] CategoryServiceApplication: Starting CategoryServiceApplication using Java 17.0.11 with PID 46460 (E:\Personal\Codes\SpringBoot\Micro Service\ecom-service\category-service\target\classes started by iis in E:\Personal\Codes\SpringBoot\Micro Service\ecom-service\service-registry)
+2024-09-10 13:11:58,058 INFO  [main] CategoryServiceApplication: No active profile set, falling back to 1 default profile: "default"
+2024-09-10 13:11:58,099 INFO  [main] ConfigServerConfigDataLoader: Fetching config from server at : http://localhost:8088
+2024-09-10 13:11:58,100 WARN  [main] ConfigServerConfigDataLoader: Could not locate PropertySource ([ConfigServerConfigDataResource@5bcde458 uris = array<String>['http://localhost:8088'], optional = true, profiles = 'default']): None of labels [] found
+2024-09-10 13:11:58,100 INFO  [main] ConfigServerConfigDataLoader: Fetching config from server at : http://localhost:8088
+2024-09-10 13:11:58,100 WARN  [main] ConfigServerConfigDataLoader: Could not locate PropertySource ([ConfigServerConfigDataResource@6e1f8469 uris = array<String>['http://localhost:8088'], optional = true, profiles = 'default']): None of labels [] found
+2024-09-10 13:11:58,100 INFO  [main] ConfigServerConfigDataLoader: Fetching config from server at : http://localhost:8088
+2024-09-10 13:11:58,100 WARN  [main] ConfigServerConfigDataLoader: Could not locate PropertySource ([ConfigServerConfigDataResource@2e380628 uris = array<String>['http://localhost:8088'], optional = true, profiles = 'default']): None of labels [] found
+2024-09-10 13:11:58,923 INFO  [main] RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-10 13:11:58,924 INFO  [main] RepositoryConfigurationDelegate: Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-09-10 13:11:58,952 INFO  [main] RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.muhib.category_service.repository.CategoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-09-10 13:11:58,954 INFO  [main] RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.muhib.category_service.repository.SecurityRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-09-10 13:11:58,955 INFO  [main] RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 26 ms. Found 0 JDBC repository interfaces.
+2024-09-10 13:11:58,965 INFO  [main] RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-10 13:11:58,966 INFO  [main] RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-10 13:11:59,071 INFO  [main] RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 101 ms. Found 2 JPA repository interfaces.
+2024-09-10 13:11:59,365 INFO  [main] GenericScope: BeanFactory id=4ba7c7bf-e462-3d56-aaa2-a2dcf5445294
+2024-09-10 13:11:59,481 WARN  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-10 13:11:59,482 WARN  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-09-10 13:11:59,669 INFO  [main] TomcatWebServer: Tomcat initialized with port 8080 (http)
+2024-09-10 13:11:59,678 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-10 13:11:59,681 INFO  [main] StandardService: Starting service [Tomcat]
+2024-09-10 13:11:59,681 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-10 13:11:59,754 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2024-09-10 13:11:59,755 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1654 ms
+2024-09-10 13:11:59,920 INFO  [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-10 13:11:59,971 INFO  [main] Version: HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-10 13:11:59,997 INFO  [main] RegionFactoryInitiator: HHH000026: Second-level cache disabled
+2024-09-10 13:12:00,262 INFO  [main] SpringPersistenceUnitInfo: No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-10 13:12:00,287 INFO  [main] HikariDataSource: HikariPool-1 - Starting...
+2024-09-10 13:12:00,653 INFO  [main] HikariPool: HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@2e9dcdd3
+2024-09-10 13:12:00,655 INFO  [main] HikariDataSource: HikariPool-1 - Start completed.
+2024-09-10 13:12:00,751 WARN  [main] Dialect: HHH000511: The 12.2.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2024-09-10 13:12:01,556 INFO  [main] JtaPlatformInitiator: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-10 13:12:20,477 INFO  [main] LocalContainerEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 13:12:20,761 WARN  [main] JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-10 13:12:20,810 WARN  [main] UserDetailsServiceAutoConfiguration: 
+
+Using generated security password: 48c79757-d470-40cf-9897-5dfd6600fb06
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-10 13:12:20,818 INFO  [main] InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer: Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-09-10 13:12:21,567 INFO  [main] DiscoveryClientOptionalArgsConfiguration: Eureka HTTP Client uses RestTemplate.
+2024-09-10 13:12:21,598 WARN  [main] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-09-10 13:12:21,662 INFO  [main] InstanceInfoFactory: Setting initial instance status as: STARTING
+2024-09-10 13:12:21,680 INFO  [main] DiscoveryClient: Initializing Eureka in region us-east-1
+2024-09-10 13:12:21,683 INFO  [main] ConfigClusterResolver: Resolving eureka endpoints via configuration
+2024-09-10 13:12:21,688 INFO  [main] DiscoveryClient: Disable delta property : false
+2024-09-10 13:12:21,688 INFO  [main] DiscoveryClient: Single vip registry refresh property : null
+2024-09-10 13:12:21,688 INFO  [main] DiscoveryClient: Force full registry fetch : false
+2024-09-10 13:12:21,688 INFO  [main] DiscoveryClient: Application is null : false
+2024-09-10 13:12:21,688 INFO  [main] DiscoveryClient: Registered Applications size is zero : true
+2024-09-10 13:12:21,688 INFO  [main] DiscoveryClient: Application version is -1: true
+2024-09-10 13:12:21,688 INFO  [main] DiscoveryClient: Getting all instance registry info from the eureka server
+2024-09-10 13:12:21,941 INFO  [main] DiscoveryClient: The response status is 200
+2024-09-10 13:12:21,943 INFO  [main] DiscoveryClient: Starting heartbeat executor: renew interval is: 30
+2024-09-10 13:12:21,944 INFO  [main] InstanceInfoReplicator: InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-09-10 13:12:21,944 INFO  [main] DiscoveryClient: Discovery Client initialized at timestamp 1725952341944 with initial instances count: 3
+2024-09-10 13:12:21,947 INFO  [main] EurekaServiceRegistry: Registering application CATEGORY-SERVICE with eureka with status UP
+2024-09-10 13:12:21,947 INFO  [main] DiscoveryClient: Saw local status change event StatusChangeEvent [timestamp=1725952341947, current=UP, previous=STARTING]
+2024-09-10 13:12:21,949 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] DiscoveryClient: DiscoveryClient_CATEGORY-SERVICE/230982-Muhibbin.nagad.com.bd:category-service: registering service...
+2024-09-10 13:12:21,949 INFO  [main] Http11NioProtocol: Starting ProtocolHandler ["http-nio-8080"]
+2024-09-10 13:12:21,981 INFO  [main] TomcatWebServer: Tomcat started on port 8080 (http) with context path '/'
+2024-09-10 13:12:21,982 INFO  [main] EurekaAutoServiceRegistration: Updating port to 8080
+2024-09-10 13:12:22,007 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] DiscoveryClient: DiscoveryClient_CATEGORY-SERVICE/230982-Muhibbin.nagad.com.bd:category-service - registration status: 204
+2024-09-10 13:12:22,122 INFO  [main] CategoryServiceApplication: Started CategoryServiceApplication in 25.396 seconds (process running for 26.757)
+2024-09-10 13:14:01,944 INFO  [http-nio-8080-exec-1] [/]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-10 13:14:01,944 INFO  [http-nio-8080-exec-1] DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2024-09-10 13:14:01,946 INFO  [http-nio-8080-exec-1] DispatcherServlet: Completed initialization in 2 ms
+2024-09-10 13:14:01,968 INFO  [http-nio-8080-exec-1] OncePerRequestFilter: Filter accessed
+2024-09-10 13:14:01,969 INFO  [http-nio-8080-exec-1] OncePerRequestFilter:  Header :  eyJhbGciOiJIUzM4NCJ9.eyJyb2xlIjoiVVNFUiIsInN1YiI6Im11aGliQGdtYWlsLmNvbSIsImlhdCI6MTcyNTk1MDgwMSwiZXhwIjoxNzI1OTY4ODAxfQ.Kxb_4Os63_SrwVxSGJ7ilxtqELwcwiCR_3RI0DKVmOdbSOtET9rXzPh8KYf9HU5a
+2024-09-10 13:14:02,233 INFO  [http-nio-8080-exec-1] CategoryController: Inside fetchCategoryList of CategoryController
+2024-09-10 13:17:21,692 INFO  [AsyncResolver-bootstrap-executor-%d] ConfigClusterResolver: Resolving eureka endpoints via configuration
+2024-09-10 13:22:21,701 INFO  [AsyncResolver-bootstrap-executor-%d] ConfigClusterResolver: Resolving eureka endpoints via configuration
+2024-09-10 13:25:00,498 INFO  [SpringApplicationShutdownHook] EurekaServiceRegistry: Unregistering application CATEGORY-SERVICE with eureka with status DOWN
+2024-09-10 13:25:00,498 INFO  [SpringApplicationShutdownHook] DiscoveryClient: Saw local status change event StatusChangeEvent [timestamp=1725953100498, current=DOWN, previous=UP]
+2024-09-10 13:25:00,498 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] DiscoveryClient: DiscoveryClient_CATEGORY-SERVICE/230982-Muhibbin.nagad.com.bd:category-service: registering service...
+2024-09-10 13:25:00,511 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] DiscoveryClient: DiscoveryClient_CATEGORY-SERVICE/230982-Muhibbin.nagad.com.bd:category-service - registration status: 204
+2024-09-10 13:25:00,810 INFO  [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 13:25:00,816 INFO  [SpringApplicationShutdownHook] HikariDataSource: HikariPool-1 - Shutdown initiated...
+2024-09-10 13:25:00,829 INFO  [SpringApplicationShutdownHook] HikariDataSource: HikariPool-1 - Shutdown completed.
+2024-09-10 13:25:00,830 INFO  [SpringApplicationShutdownHook] DiscoveryClient: Shutting down DiscoveryClient ...
+2024-09-10 13:25:03,832 INFO  [SpringApplicationShutdownHook] DiscoveryClient: Unregistering ...
+2024-09-10 13:25:03,838 INFO  [SpringApplicationShutdownHook] DiscoveryClient: DiscoveryClient_CATEGORY-SERVICE/230982-Muhibbin.nagad.com.bd:category-service - deregister  status: 200
+2024-09-10 13:25:03,838 INFO  [SpringApplicationShutdownHook] DiscoveryClient: Completed shut down of DiscoveryClient

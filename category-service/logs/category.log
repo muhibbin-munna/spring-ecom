@@ -1,0 +1,75 @@
+#logback.classic pattern: %d %-5level [%thread] %logger{0}: %msg%n
+#logback.classic pattern: %d %-5level [%thread] %logger{0}: %msg%n
+2024-09-10 13:25:09,167 INFO  [main] CategoryServiceApplication: Starting CategoryServiceApplication using Java 17.0.11 with PID 40704 (E:\Personal\Codes\SpringBoot\Micro Service\ecom-service\category-service\target\classes started by iis in E:\Personal\Codes\SpringBoot\Micro Service\ecom-service\service-registry)
+2024-09-10 13:25:09,169 INFO  [main] CategoryServiceApplication: No active profile set, falling back to 1 default profile: "default"
+2024-09-10 13:25:09,206 INFO  [main] ConfigServerConfigDataLoader: Fetching config from server at : http://localhost:8088
+2024-09-10 13:25:09,206 WARN  [main] ConfigServerConfigDataLoader: Could not locate PropertySource ([ConfigServerConfigDataResource@1f1cae23 uris = array<String>['http://localhost:8088'], optional = true, profiles = 'default']): None of labels [] found
+2024-09-10 13:25:09,207 INFO  [main] ConfigServerConfigDataLoader: Fetching config from server at : http://localhost:8088
+2024-09-10 13:25:09,207 WARN  [main] ConfigServerConfigDataLoader: Could not locate PropertySource ([ConfigServerConfigDataResource@6124287a uris = array<String>['http://localhost:8088'], optional = true, profiles = 'default']): None of labels [] found
+2024-09-10 13:25:09,207 INFO  [main] ConfigServerConfigDataLoader: Fetching config from server at : http://localhost:8088
+2024-09-10 13:25:09,207 WARN  [main] ConfigServerConfigDataLoader: Could not locate PropertySource ([ConfigServerConfigDataResource@19569ebd uris = array<String>['http://localhost:8088'], optional = true, profiles = 'default']): None of labels [] found
+2024-09-10 13:25:09,840 INFO  [main] RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-10 13:25:09,841 INFO  [main] RepositoryConfigurationDelegate: Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-09-10 13:25:09,868 INFO  [main] RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.muhib.category_service.repository.CategoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-09-10 13:25:09,869 INFO  [main] RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.muhib.category_service.repository.SecurityRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-09-10 13:25:09,870 INFO  [main] RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 25 ms. Found 0 JDBC repository interfaces.
+2024-09-10 13:25:09,880 INFO  [main] RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-10 13:25:09,880 INFO  [main] RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-10 13:25:09,981 INFO  [main] RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 99 ms. Found 2 JPA repository interfaces.
+2024-09-10 13:25:10,243 INFO  [main] GenericScope: BeanFactory id=4ba7c7bf-e462-3d56-aaa2-a2dcf5445294
+2024-09-10 13:25:10,376 WARN  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-10 13:25:10,378 WARN  [main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-09-10 13:25:10,583 INFO  [main] TomcatWebServer: Tomcat initialized with port 8080 (http)
+2024-09-10 13:25:10,592 INFO  [main] Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-10 13:25:10,594 INFO  [main] StandardService: Starting service [Tomcat]
+2024-09-10 13:25:10,595 INFO  [main] StandardEngine: Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-10 13:25:10,667 INFO  [main] [/]: Initializing Spring embedded WebApplicationContext
+2024-09-10 13:25:10,667 INFO  [main] ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1457 ms
+2024-09-10 13:25:10,839 INFO  [main] LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-10 13:25:10,900 INFO  [main] Version: HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-10 13:25:10,936 INFO  [main] RegionFactoryInitiator: HHH000026: Second-level cache disabled
+2024-09-10 13:25:11,208 INFO  [main] SpringPersistenceUnitInfo: No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-10 13:25:11,233 INFO  [main] HikariDataSource: HikariPool-1 - Starting...
+2024-09-10 13:25:11,535 INFO  [main] HikariPool: HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1782896
+2024-09-10 13:25:11,537 INFO  [main] HikariDataSource: HikariPool-1 - Start completed.
+2024-09-10 13:25:11,641 WARN  [main] Dialect: HHH000511: The 12.2.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2024-09-10 13:25:12,539 INFO  [main] JtaPlatformInitiator: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-10 13:25:40,145 INFO  [main] LocalContainerEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 13:25:40,465 WARN  [main] JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-10 13:25:40,521 WARN  [main] UserDetailsServiceAutoConfiguration: 
+
+Using generated security password: b2effc3f-0367-45f3-8181-62dd830b830a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-10 13:25:40,527 INFO  [main] InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer: Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-09-10 13:25:41,431 INFO  [main] DiscoveryClientOptionalArgsConfiguration: Eureka HTTP Client uses RestTemplate.
+2024-09-10 13:25:41,475 WARN  [main] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-09-10 13:25:41,575 INFO  [main] InstanceInfoFactory: Setting initial instance status as: STARTING
+2024-09-10 13:25:41,610 INFO  [main] DiscoveryClient: Initializing Eureka in region us-east-1
+2024-09-10 13:25:41,615 INFO  [main] ConfigClusterResolver: Resolving eureka endpoints via configuration
+2024-09-10 13:25:41,627 INFO  [main] DiscoveryClient: Disable delta property : false
+2024-09-10 13:25:41,627 INFO  [main] DiscoveryClient: Single vip registry refresh property : null
+2024-09-10 13:25:41,627 INFO  [main] DiscoveryClient: Force full registry fetch : false
+2024-09-10 13:25:41,627 INFO  [main] DiscoveryClient: Application is null : false
+2024-09-10 13:25:41,627 INFO  [main] DiscoveryClient: Registered Applications size is zero : true
+2024-09-10 13:25:41,627 INFO  [main] DiscoveryClient: Application version is -1: true
+2024-09-10 13:25:41,627 INFO  [main] DiscoveryClient: Getting all instance registry info from the eureka server
+2024-09-10 13:25:41,952 INFO  [main] DiscoveryClient: The response status is 200
+2024-09-10 13:25:41,954 INFO  [main] DiscoveryClient: Starting heartbeat executor: renew interval is: 30
+2024-09-10 13:25:41,956 INFO  [main] InstanceInfoReplicator: InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-09-10 13:25:41,957 INFO  [main] DiscoveryClient: Discovery Client initialized at timestamp 1725953141957 with initial instances count: 3
+2024-09-10 13:25:41,960 INFO  [main] EurekaServiceRegistry: Registering application CATEGORY-SERVICE with eureka with status UP
+2024-09-10 13:25:41,961 INFO  [main] DiscoveryClient: Saw local status change event StatusChangeEvent [timestamp=1725953141961, current=UP, previous=STARTING]
+2024-09-10 13:25:41,962 INFO  [main] Http11NioProtocol: Starting ProtocolHandler ["http-nio-8080"]
+2024-09-10 13:25:41,962 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] DiscoveryClient: DiscoveryClient_CATEGORY-SERVICE/230982-Muhibbin.nagad.com.bd:category-service: registering service...
+2024-09-10 13:25:41,983 INFO  [main] TomcatWebServer: Tomcat started on port 8080 (http) with context path '/'
+2024-09-10 13:25:41,983 INFO  [main] EurekaAutoServiceRegistration: Updating port to 8080
+2024-09-10 13:25:42,002 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] DiscoveryClient: DiscoveryClient_CATEGORY-SERVICE/230982-Muhibbin.nagad.com.bd:category-service - registration status: 204
+2024-09-10 13:25:42,162 INFO  [main] CategoryServiceApplication: Started CategoryServiceApplication in 34.082 seconds (process running for 35.367)
+2024-09-10 13:28:41,910 INFO  [http-nio-8080-exec-1] [/]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-10 13:28:41,911 INFO  [http-nio-8080-exec-1] DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2024-09-10 13:28:41,915 INFO  [http-nio-8080-exec-1] DispatcherServlet: Completed initialization in 4 ms
+2024-09-10 13:28:41,943 INFO  [http-nio-8080-exec-1] OncePerRequestFilter: Filter accessed
+2024-09-10 13:28:41,944 INFO  [http-nio-8080-exec-1] OncePerRequestFilter:  Header :  eyJhbGciOiJIUzM4NCJ9.eyJyb2xlIjoiVVNFUiIsInN1YiI6Im11aGliQGdtYWlsLmNvbSIsImlhdCI6MTcyNTk1MDgwMSwiZXhwIjoxNzI1OTY4ODAxfQ.Kxb_4Os63_SrwVxSGJ7ilxtqELwcwiCR_3RI0DKVmOdbSOtET9rXzPh8KYf9HU5a
+2024-09-10 13:28:42,281 INFO  [http-nio-8080-exec-1] CategoryController: Inside fetchCategoryList of CategoryController

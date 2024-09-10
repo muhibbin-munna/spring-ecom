@@ -1,7 +1,7 @@
-package com.muhib.service_user.security;
+package com.muhib.common_util.security;
 
-import com.muhib.service_user.entity.User;
-import com.muhib.service_user.service.UserService;
+import com.muhib.common_util.entity.User;
+import com.muhib.common_util.service.SecurityService;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.MalformedJwtException;
@@ -31,13 +31,13 @@ import java.util.stream.Collectors;
 @Component
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
-    private Logger logger = LoggerFactory.getLogger(OncePerRequestFilter.class);
+    private final Logger logger = LoggerFactory.getLogger(JwtAuthenticationFilter.class);
 
     @Autowired
     private JwtHelper jwtHelper;
 
     @Autowired
-    private UserService userService;
+    private SecurityService securityService;
 
     @Bean
     public PasswordEncoder passwordEncoder() {
@@ -47,7 +47,6 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         logger.info("Filter accessed");
-        //Authorization
         String requestHeader = request.getHeader("Authorization");
         logger.info(" Header :  {}", requestHeader);
         String username = null;
@@ -70,7 +69,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
         if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
             //fetch user detail from username
-            User user = this.userService.findUserByEmail(username);
+            User user = this.securityService.findUserByEmail(username);
 
             Boolean validateToken = this.jwtHelper.validateToken(token, user);
             if (validateToken) {

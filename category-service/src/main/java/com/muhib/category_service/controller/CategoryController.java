@@ -16,17 +16,18 @@ public class CategoryController {
     @Autowired
     private CategoryService categoryService;
 
-    private final Logger LOGGER = LoggerFactory.getLogger(CategoryController.class);
+
+    private final Logger log = LoggerFactory.getLogger(CategoryController.class);
 
     @PostMapping("/category/add")
     public Category saveCategory(@Validated @RequestBody Category category) {
-        LOGGER.info("Inside saveCategory of CategoryController: category={}", category);
+        log.info("Inside saveCategory of CategoryController: category={}", category);
         return categoryService.saveCategory(category);
     }
 
     @GetMapping("/categories")
     public List<Category> fetchCategoryList(){
-        LOGGER.info("Inside fetchCategoryList of CategoryController");
+        log.info("Inside fetchCategoryList of CategoryController");
         return categoryService.fetchCategoryList();
     }
     @GetMapping("/category-name/{name}")

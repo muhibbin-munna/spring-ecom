@@ -1,0 +1,25 @@
+<configuration>
+
+    <appender name = "consoleAppender" class = "ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d %-5level [%thread] %logger{0}: %msg%n</pattern>
+            <outputPatternAsHeader>true</outputPatternAsHeader>
+        </encoder>
+    </appender>
+
+    <appender name = "fileAppender" class = "ch.qos.logback.core.FileAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d %-5level [%thread] %logger{0}: %msg%n</pattern>
+            <outputPatternAsHeader>true</outputPatternAsHeader>
+        </encoder>
+        <file>
+            <file>E:/Personal/Codes/SpringBoot/Micro Service/ecom-service/category-service/logs/category.log</file>
+        </file>
+    </appender>
+
+    <root level = "INFO">
+        <appender-ref ref = "consoleAppender"/>
+        <appender-ref ref = "fileAppender"/>
+    </root>
+
+</configuration>
