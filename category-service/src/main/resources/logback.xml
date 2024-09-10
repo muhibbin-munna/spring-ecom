@@ -8,13 +8,20 @@
     </appender>
 
     <appender name = "fileAppender" class = "ch.qos.logback.core.FileAppender">
+        <file>
+            <file>E:/Personal/Codes/SpringBoot/Micro Service/ecom-service/category-service/logs/category.log</file>
+        </file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logFile.%d{yyyy-MM-dd_HH}.log</fileNamePattern>
+            <maxHistory>720</maxHistory>
+            <totalSizeCap>500MB</totalSizeCap>
+        </rollingPolicy>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <pattern>%d %-5level [%thread] %logger{0}: %msg%n</pattern>
             <outputPatternAsHeader>true</outputPatternAsHeader>
         </encoder>
-        <file>
-            <file>E:/Personal/Codes/SpringBoot/Micro Service/ecom-service/category-service/logs/category.log</file>
-        </file>
+
+
     </appender>
 
     <root level = "INFO">
