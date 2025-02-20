@@ -22,5 +22,4 @@ public class Item {
     private Long price;
     private Long categoryId;
 
-
 }

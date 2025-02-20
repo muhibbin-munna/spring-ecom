@@ -9,8 +9,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class SecurityService {
 
-    @Autowired
-    private SecurityRepository userRepository;
+    private final SecurityRepository userRepository;
+
+    public SecurityService(SecurityRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
     public User findUserByEmail(String email) {
         return userRepository.findByEmail(email);
